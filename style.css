@@ -1,0 +1,48 @@
+.root{
+    .--pri = fff
+    
+}
+
+@font-face {
+    font-family: aeonik;
+    font-weight: 200;
+    src: url(./Aeonik-Light.ttf);
+}
+
+@font-face {
+    font-family: aeonik;
+    font-weight: 500;
+    src: url(./Aeonik-Bold.ttf);
+}
+
+@font-face {
+    font-family: aeonik;
+    font-weight: 700;
+    src: url(./Aeonik-Regular.ttf);
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: gilory;
+}
+
+html,
+body{
+    height:100%;
+    width:100%;
+}
+h1{
+    color: white;
+    font-family: aeonik;
+    font-weight: 500;
+}
+
+#main{
+    height: 100%;
+    width:100%;
+    background-color: #000000;
+}
