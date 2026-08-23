@@ -1,6 +1,7 @@
-.root{
-    .--pri = fff
-    
+:root{
+    --pri:#fff;
+    --sec: #e01111;
+    --tri: #59c6c1;
 }
 
 @font-face {
@@ -36,10 +37,18 @@ body{
     width:100%;
 }
 h1{
-    color: white;
+    
     font-family: aeonik;
     font-weight: 500;
+    color: var(--pri);
 }
+
+h2{
+    font-family: aeonik;
+    font-weight: 200;
+    color: var(--tri);
+}
+
 
 #main{
     height: 100%;
