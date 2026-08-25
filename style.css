@@ -1,6 +1,6 @@
 :root{
     --pri:#d37878;
-    --sec: #425771;
+    --sec: #89a6c9;
     --tri1: #b67bbb;
     --tri2: #511a1a;
 }
@@ -30,7 +30,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: aeonik;
-    background-color: red;
+    
+    
 
 }
 
@@ -47,6 +48,9 @@ section.allElems{
     padding-top: 80px;
     background-color: var(--pri);
     display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
 
 }
 
@@ -54,8 +58,8 @@ nav{
     top: 0;
     left: 0;
     position: fixed;
-    background-color: var(--tri1);
-    height: 20%;
+    background-color: #c5bdbd;
+    height: 10%;
     width: 100%;
     
     
@@ -65,14 +69,18 @@ nav{
 #main{
     height: 100%; 
     width:100%;
-    background-color: var(--tri2)
+   
 }
 .Elems{
-    background-color: rgb(151, 70, 70);
-    height: 300px;
-    width: 200px;
-    padding: 20px;
-    color: white;
+    background-color: white;
+    top: 30px;
+    position:relative;
+    height: 400px;
+    width: 330px;
+    padding: 30px ;
+    font-size: 30px;
+    border-radius: 20px;
+    align-items: center;
 
 
 }
