@@ -59,24 +59,22 @@ section.container{
     flex-wrap: wrap;
     align-items: flex-start;
     gap: 30px;
-    
-    
+    justify-content: space-between;
 
 }
-.box{
+.box {
     height: 400px;
     width: 330px;
     color: white;
     background-color: var(--tri2);
     margin-top: 40px;
     font-size: 30px;
-    align-items: flex-start;
-    display: flex;
-    gap: 20%;
-    padding-left: 40px;
-    padding-right: 40px;
     border-radius: 20px;
-
+    display: flex;
+    justify-content: center; /* horizontally center */
+    align-items: flex-start; /* top */
+    padding-top: 20px;
+    box-sizing: border-box;
 }
 
 nav{
@@ -86,7 +84,6 @@ nav{
     background-color: #ed0c0c;
     height: 10%;
     width: 100%;
-    display: ;
     
     
 }
