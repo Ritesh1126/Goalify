@@ -1,8 +1,8 @@
 :root{
-    --pri:#d37878;
+    --pri:#647979;
     --sec: #89a6c9;
-    --tri1: #b67bbb;
-    --tri2: #511a1a;
+    --tri1: #db83e3;
+    --tri2: #dd8787;
 }
 
 @font-face {
@@ -41,16 +41,41 @@ body{
     width:100%;
 }
 
-section.allElems{
+#main{
+    height: 100%; 
+    width:100%;
+   
+}
+
+
+section.container{
     height: 100%;
     width: 100%;
     padding: 40px;
     padding-top: 80px;
+    padding-left: 20px;
     background-color: var(--pri);
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    gap: 20px;
+    gap: 30px;
+    
+    
+
+}
+.box{
+    height: 400px;
+    width: 330px;
+    color: white;
+    background-color: var(--tri2);
+    margin-top: 40px;
+    font-size: 30px;
+    align-items: flex-start;
+    display: flex;
+    gap: 20%;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 20px;
 
 }
 
@@ -58,29 +83,10 @@ nav{
     top: 0;
     left: 0;
     position: fixed;
-    background-color: #c5bdbd;
+    background-color: #ed0c0c;
     height: 10%;
     width: 100%;
+    display: ;
     
     
-}
-
-
-#main{
-    height: 100%; 
-    width:100%;
-   
-}
-.Elems{
-    background-color: white;
-    top: 30px;
-    position:relative;
-    height: 400px;
-    width: 330px;
-    padding: 30px ;
-    font-size: 30px;
-    border-radius: 20px;
-    align-items: center;
-
-
 }
