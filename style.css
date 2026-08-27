@@ -281,6 +281,23 @@ section.container{
     scale: 0.95;
 }
 
+.Todo-container .addtask .form .important-check{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
 
+.Todo-container .addtask .form .important-check input[type="checkbox"]{
+  width: 20px;
+  height: 10px;
+  cursor: pointer;
+  accent-color: rgb(205, 205, 150);
+}
+
+.Todo-container .addtask .form .important-check label{
+    font-size: 20px;
+    cursor: pointer;
+}
 
  
