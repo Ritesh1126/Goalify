@@ -2,7 +2,7 @@
     --pri:#7fc8ddf5;
     --sec: #8c1611;
     --tri1: #bd0606;
-    --tri2: #dd8787;
+    --tri2: #c72b2b;
 }
 
 @font-face {
@@ -145,6 +145,75 @@ section.container{
     font-weight: 700;
     cursor: pointer;
     background: transparent;
+
 }
+
+.todo-fullpage{
+    display: block;
+}
+
+.todo-fullpage h1{
+    font-size: 60px;
+}
+
+.todo-fullpage .Todo-container{
+    height: 80%;
+    width: 100%;
+    margin-top: 20px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.todo-fullpage .Todo-container .addtask{
+    width: 38%;
+    background-color: aquamarine;
+    height: 100%;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.addtask h2{
+    font-size: 30px;
+    padding: 30px 30px 0;
+    color: black;
+    font-family: aeonik;
+} 
+
+.todo-fullpage .Todo-container .alltask{
+    width:60%;
+    background-color: rgb(203, 21, 172);
+    height: 100%;
+    border-radius: 30px;
+    color: white;
+
+}
+.todo-fullpage .Todo-container .addtask .form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.todo-fullpage .Todo-container .addtask .form
+{
+    margin-bottom: 20px;
+}
+.Todo-container .addtask .form input,
+.Todo-container .addtask .form textarea{
+    padding: 15px 20px;
+    width: 100%;
+    font-size: 25px;
+    background-color: var(--tri2);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin-bottom: 15px;
+}
+
+
 
 
