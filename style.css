@@ -1,7 +1,7 @@
 :root{
-    --pri:#647979;
-    --sec: #89a6c9;
-    --tri1: #db83e3;
+    --pri:#7fc8ddf5;
+    --sec: #8c1611;
+    --tri1: #bd0606;
     --tri2: #dd8787;
 }
 
@@ -44,6 +44,21 @@ body{
    
 }
 
+nav{
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: #ed0c0c;
+    height: 10%;
+    width: 100%;  
+    transition: all 0.3s ease-in-out;
+    z-index: 0;
+
+}
+
+nav.hide{
+    transform: translateY(-100%);
+}
 
 section.container{
     height: 100%;
@@ -53,10 +68,12 @@ section.container{
     padding-left: 20px;
     background-color: var(--pri);
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: auto;
     align-items: flex-start;
     gap: 30px;
     justify-content: space-between;
+    
 
 }
 .box {
@@ -71,6 +88,7 @@ section.container{
     position: relative;   /* image ko andar position karne ke liye */
     overflow: hidden;     /* rounded corners ke bahar image na nikle */
     cursor:pointer;       /* Pointer point krega */
+    box-shadow: 0 5px 20px rgba(216, 25, 76, 0.804)
 }
 
 .box img{
@@ -102,12 +120,30 @@ section.container{
     right: 0;
 }
 
-nav{
-    top: 0;
-    left: 0;
-    position: fixed;
-    background-color: #ed0c0c;
-    height: 10%;
-    width: 100%;  
-  
+
+.fullbox{
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    padding-top: 120px;
+    background-color: rgb(46, 49, 123);
+    font-size: 60px;
+    color: white;
+    display: none;
+    
+    
 }
+.back
+{
+    position: absolute;
+    padding: 12px, 12px;
+    font-size: 20px;
+    right: 10%;
+    border-radius: 50%;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    background: transparent;
+}
+
+
