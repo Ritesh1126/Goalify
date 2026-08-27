@@ -1,4 +1,5 @@
-const AllBox = document.querySelectorAll(".box");
+function opencard(){
+    const AllBox = document.querySelectorAll(".box");
 const AllFullBox = document.querySelectorAll(".fullbox");
 const Back = document.querySelectorAll(".back");
 
@@ -20,3 +21,7 @@ Back.forEach(btn=>{
             document.querySelector(".container").scrollIntoView({ behavior: "smooth" });  // isse smoothly back ho jayega 
     })
 })
+}
+
+opencard(); // funtion call hoga to function run hoga 
+
