@@ -2,7 +2,7 @@
     --pri:#7fc8ddf5;
     --sec: #8c1611;
     --tri1: #bd0606;
-    --tri2: #c72b2b;
+    --tri2: white;
 }
 
 @font-face {
@@ -112,7 +112,7 @@ section.container{
     margin:10px;
     background: rgba(11, 11, 11, 0.45);
     border-radius: 8px;
-    font-weight: 30px;
+    font-weight: 700;
     font-size: 10px;
     
 }
@@ -137,7 +137,7 @@ section.container{
 .back
 {
     position: absolute;
-    padding: 12px, 12px;
+    padding: 12px 12px;
     font-size: 20px;
     right: 10%;
     border-radius: 50%;
@@ -168,7 +168,7 @@ section.container{
 
 .todo-fullpage .Todo-container .addtask{
     width: 38%;
-    background-color: aquamarine;
+    background-color: rgb(168, 204, 214);
     height: 100%;
     border-radius: 30px;
     overflow: hidden;
@@ -198,7 +198,7 @@ section.container{
     box-sizing: border-box;
 }
 
-.todo-fullpage .Todo-container .addtask .form
+.todo-fullpage .Todo-container .addtask .form h2
 {
     margin-bottom: 20px;
 }
@@ -213,7 +213,74 @@ section.container{
     outline: none;
     margin-bottom: 15px;
 }
+.Todo-container .addtask .form button{
+    padding: 15px 20px;
+    width: 100%;
+    font-size: 25px;
+    font-weight: 700;
+    background-color: rgb(155, 211, 155);
+    border-radius: 5px;
+    border-color:black;
+    outline:black;
+    margin-bottom: 15px;
+    cursor: pointer;
+    transform: all 0.2s ease-in-out;
+   
+}
+.Todo-container .addtask .form button:active{
+    scale: 0.9;
+}
+
+
+.todo-fullpage .Todo-container .alltask{
+    width:60%;
+    background-color: rgb(132, 219, 222);
+    height: 100%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 30px;
+    height: 100%;
+    box-sizing: border-box;
+    overflow: auto;
+
+}
+
+.task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background-color: white;
+    padding: 20px 30px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+   
+}
+
+.task h2{
+    color: black;
+    font-size: 35px;
+}
+
+
+.task button{
+    padding: 15px 20px ;
+    width: 20%;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(36, 241, 108);
+    border-radius: 5%;
+    border-color: black;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.task button:active{
+    scale: 0.95;
+}
 
 
 
-
+ 
