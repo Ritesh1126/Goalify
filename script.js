@@ -25,3 +25,19 @@ Back.forEach(btn=>{
 
 opencard(); // funtion call hoga to function run hoga 
 
+
+let form = document.querySelector(".addtask");
+let taskinput = document.querySelector(".addtask form input");
+let taskdetailinput = document.querySelector(".addtask form textarea");
+
+
+form.addEventListener("submit", function(e){
+    e.preventDefault();
+    
+   let tasktitle = form.querySelector('input[type="text"]').value;
+   let taskdetail = form.querySelector("textarea").value;
+   let isimportant = form.querySelector("#important").checked;
+
+   console.log(tasktitle,taskdetail,isimportant);
+   
+})
