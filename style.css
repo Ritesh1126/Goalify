@@ -130,6 +130,7 @@ section.container{
     font-size: 60px;
     color: white;
     display: none;
+    position:relative;
     
     
 }
