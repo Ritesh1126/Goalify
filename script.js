@@ -29,6 +29,7 @@ opencard(); // funtion call hoga to function run hoga
 let form = document.querySelector(".addtask .form");
 let taskinput = document.querySelector(".addtask form input");
 let taskdetailinput = document.querySelector(".addtask form textarea");
+let alltaskbox = document.querySelector(".alltask");
 
 
 form.addEventListener("submit", function(e){
@@ -39,5 +40,27 @@ form.addEventListener("submit", function(e){
    let isimportant = form.querySelector("#important").checked;
 
    console.log(tasktitle,taskdetail,isimportant);
+
+
+   if (tasktitle ==""){
+    return ;
+   }
+
+   let taskcard = document.createElement("div");
+   taskcard.classList.add("taskcard");
+   if (isimportant){
+    taskcard.classList.add("important");
+    }
+
+    taskcard.innerHTML = 
+    `<div class="task">
+        <h2>${tasktitle}</h2>
+        <p>${taskdetail}</p>
+        ${isimportant ? '<span class="tag">Important</span>' : ''}
+        <button>Mark As Done</button>
+    </div>`;
+      alltaskbox.appendChild(taskcard); 
+
+    
    
 })
