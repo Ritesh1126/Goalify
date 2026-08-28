@@ -290,14 +290,23 @@ section.container{
 
 .Todo-container .addtask .form .important-check input[type="checkbox"]{
   width: 20px;
-  height: 10px;
+  height: 22px;
+  padding:10px 0;
   cursor: pointer;
-  accent-color: rgb(205, 205, 150);
+  accent-color: rgb(49, 82, 214);
+  justify-content: flex-start;
+  flex-shrink: 0;
+  margin: 0;
+
+
 }
 
 .Todo-container .addtask .form .important-check label{
-    font-size: 20px;
+    font-size: 25px;
     cursor: pointer;
+     padding:10px 0;
+     color: black;
+   
 }
 
  
