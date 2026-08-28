@@ -26,7 +26,7 @@ Back.forEach(btn=>{
 opencard(); // funtion call hoga to function run hoga 
 
 
-let form = document.querySelector(".addtask");
+let form = document.querySelector(".addtask .form");
 let taskinput = document.querySelector(".addtask form input");
 let taskdetailinput = document.querySelector(".addtask form textarea");
 
