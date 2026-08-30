@@ -60,7 +60,6 @@ form.addEventListener("submit", function(e){
         <button>Mark As Done</button>
     </div>`;
       alltaskbox.appendChild(taskcard); 
-
-    
+   
    
 })
